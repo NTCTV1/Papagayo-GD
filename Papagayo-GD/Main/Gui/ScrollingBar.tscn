@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Main/Gui/ScrollingBar.gd" id="1_685bs"]
+
+[node name="ScrollingBar" type="Node2D"]
+script = ExtResource("1_685bs")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, 32)

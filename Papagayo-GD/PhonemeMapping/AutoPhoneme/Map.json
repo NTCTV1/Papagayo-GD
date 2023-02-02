@@ -1,0 +1,54 @@
+{
+    "uy":"AI",
+    "he":"AI",
+    "bu":"AI",
+    "i":"AI",
+    "a":"AI",
+    
+    "ought":"O",
+    "oh":"O",
+    "o":"O",
+
+    "ber":"E",
+    "er":"E",
+    "at":"E",
+    "ay":"E",
+    "e":"E",
+
+    "you":"U",
+    "wo":"U",
+    "ou":"U",
+    "to":"U",
+    "u":"U",
+
+    "than":"TH",
+    "thin":"TH",
+    "th":"TH",
+
+    "cra":"etc",
+    "s":"etc",
+    "y":"etc",
+    "r":"etc",
+    "h":"etc",
+    "n":"etc",
+    "d":"etc",
+    "g":"etc",
+    "k":"etc",
+
+    "ll":"L",
+    "l":"L",
+
+    "wi":"WQ",
+    "oo":"WQ",
+    "w":"WQ",
+
+    "mine":"MBP",
+    "mm":"MBP",
+    "m":"MBP",
+    "b":"MBP",
+    "p":"MBP",
+
+    "fu":"FV",
+    "v":"FV",
+    "f":"FV"
+}

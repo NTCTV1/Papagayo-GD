@@ -1,0 +1,46 @@
+{
+	"phonetics": [
+		{
+			"parentId": 1,
+			"sizeX": 30,
+			"text": "etc",
+			"type": 1,
+			"x": 0,
+			"y": 200
+		},
+		{
+			"parentId": 1,
+			"sizeX": 20,
+			"text": "AH",
+			"type": 1,
+			"x": 10,
+			"y": 230
+		},
+		{
+			"parentId": 1,
+			"sizeX": 10,
+			"text": "L",
+			"type": 1,
+			"x": 20,
+			"y": 260
+		},
+		{
+			"parentId": 1,
+			"sizeX": 10,
+			"text": "O",
+			"type": 1,
+			"x": 30,
+			"y": 290
+		}
+	],
+	"words": [
+		{
+			"selfId": 1,
+			"sizeX": 50,
+			"text": "hello",
+			"type": 0,
+			"x": 0,
+			"y": 150
+		}
+	]
+}
