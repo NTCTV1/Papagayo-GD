@@ -13,3 +13,6 @@ Here are the tools i used:
 I replaced some phonemes (TH,AH)
 If you don't want to enable them, you can just override "Map" with "MapOld"
 2023/2/2 
+
+new phonemes (AH,SH,TH,SS)
+If you don't want to enable them, you can just override "Map" with "MapOld"
