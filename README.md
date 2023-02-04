@@ -9,10 +9,6 @@ Here are the tools i used:
 	http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 	https://github.com/LostMoho/Papagayo
 	https://github.com/Gianclgar/GDScriptAudioImport
-
-I replaced some phonemes (TH,AH)
-If you don't want to enable them, you can just override "Map" with "MapOld"
-2023/2/2 
-
+v0.01
 new phonemes (AH,SH,TH,SS)
 If you don't want to enable them, you can just override "Map" with "MapOld"
