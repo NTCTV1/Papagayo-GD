@@ -1,13 +1,18 @@
 {
+	"newPhonemes":[
+		"AH","SH","TH","SS"
+	],
 	"AA0": "AI",
 	"AA1": "AI",
 	"AA2": "AI",
 	"AE0": "AI",
 	"AE1": "AI",
 	"AE2": "AI",
+
 	"AH0": "AH",
 	"AH1": "AH",
 	"AH2": "AH",
+	
 	"AO0": "O",
 	"AO1": "O",
 	"AO2": "O",
@@ -44,7 +49,7 @@
 	"K": "etc",
 	"L": "L",
 	"M": "MBP",
-	"N": "etc",
+	"N": "NN",
 	"NG": "etc",
 	"OW0": "O",
 	"OW1": "O",
@@ -54,10 +59,14 @@
 	"OY2": "WQ",
 	"P": "MBP",
 	"R": "etc",
-	"S": "etc",
-	"SH": "TH",
-	"T": "TH",
+
+	"S": "SS",
+	"SH": "SH",
+
+	"T": "etc",
+
 	"TH": "TH",
+
 	"UH0": "U",
 	"UH1": "U",
 	"UH2": "U",

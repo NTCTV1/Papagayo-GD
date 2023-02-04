@@ -1,4 +1,4 @@
-My programming skills are poor, and my native language is not English, 
+My programming skills are pulled, and my native language is not English, 
 so there are a lot of pieces of code that can be optimized, you guys can update it and let me know.
 (You can also call it an inferior Papagayo imitator v0.1)
 

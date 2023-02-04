@@ -4,6 +4,7 @@ var audio_playing:bool = false
 var node:PackedScene = preload("res://Word/Node.tscn")
 
 func _ready():
+	Global.mouth_node = $"Ui/Mouth/Mouth"
 	get_tree().get_root().files_dropped.connect( self._load_project )
 	$"Ui/Clear".pressed.connect( self._clear )
 	$"Ui/Export".pressed.connect( self._export_project )
@@ -21,7 +22,8 @@ func _process(_delta):
 	if not audio_playing:
 		$"BG/Content/VSeparator".position.x = (floor(mouse_position_x / Global.draw_spacing / Global.draw_scale) * Global.draw_spacing)
 	else :
-		$"BG/Content/VSeparator".position.x = ( ($"AudioStreamPlayer".get_playback_position() * Global.project_fps * 10 ))*Global.draw_scale
+		$"BG/Content/VSeparator".position.x = ( ($"AudioStreamPlayer".get_playback_position() * Global.project_fps * Global.draw_spacing ))*Global.draw_scale
+	Global.playing_pos = $"BG/Content/VSeparator".position.x
 
 # connect functions
 
@@ -37,7 +39,7 @@ func _load_project(files:PackedStringArray):
 				new_word_node.real_size_x = word.sizeX
 				new_word_node.real_text = word.text
 				new_word_node.self_type = word.type
-				new_word_node.position = Vector2(word.x,word.y)
+				new_word_node.real_position = Vector2(word.x,word.y)
 				Global.words_nodes[new_word_node.self_id] = new_word_node
 				$"BG/Content/Word".add_child(new_word_node)
 				Global.project_node_count += 1
@@ -47,8 +49,7 @@ func _load_project(files:PackedStringArray):
 				new_phonetic_node.real_size_x = phonetic.sizeX
 				new_phonetic_node.real_text = phonetic.text
 				new_phonetic_node.self_type = phonetic.type
-				new_phonetic_node.position = Vector2(phonetic.x,phonetic.y)
-				print(new_phonetic_node.real_position)
+				new_phonetic_node.real_position = Vector2(phonetic.x,phonetic.y)
 				$"BG/Content/Phonetic".add_child(new_phonetic_node)
 		elif file.ends_with(".wav"):
 			var WavLoader:AudioLoader = AudioLoader.new()
@@ -61,6 +62,7 @@ func _clear():
 		phonetic_node.queue_free()
 
 func _export_project():
+	#Global.draw_spacing
 	Global.project_dic.words.clear()
 	Global.project_dic.phonetics.clear()
 	for word in $"BG/Content/Word".get_children():
@@ -69,16 +71,16 @@ func _export_project():
 			"sizeX":word.size.x,
 			"text":word.real_text,
 			"type":word.self_type,
-			"x":word.position.x,
-			"y":word.position.y } )
+			"x":Global.get_grid_pos(word.real_position.x),
+			"y":Global.get_grid_pos(word.real_position.y) } )
 	for phonetic in $"BG/Content/Phonetic".get_children():
 		Global.project_dic.phonetics.append( {
 			"parentId":phonetic.parent_id,
 			"sizeX":phonetic.size.x,
 			"text":phonetic.real_text,
 			"type":phonetic.self_type ,
-			"x":phonetic.position.x,
-			"y":phonetic.position.y,} )
+			"x":Global.get_grid_pos(phonetic.real_position.x),
+			"y":Global.get_grid_pos(phonetic.real_position.y) } )
 	Global.save_json(project_json_path,Global.project_dic)
 	print("Export over!")
 
@@ -100,7 +102,7 @@ func _add_word_and_phonetic( new_word:String ):
 func _add_word( new_word:String ):
 	var new_word_node:WordPhoneticNode = node.instantiate()
 	new_word_node.self_type = WordPhoneticNode.types.Word
-	new_word_node.real_position = Vector2(0,150)
+	new_word_node.real_position = Vector2(Global.playing_pos,150)
 	new_word_node.real_text = new_word
 	new_word_node.self_id = Global.project_node_count
 	$"BG/Content/Word".add_child(new_word_node)
@@ -114,7 +116,7 @@ func _add_phonetic( new_word:String , parent_id:int ):
 		
 		var new_phonetic_node:WordPhoneticNode = node.instantiate()
 		
-		new_phonetic_node.real_position.x = _get_frame_position(phonetic)
+		new_phonetic_node.real_position.x = Global.playing_pos + _get_frame_position(phonetic) 
 		new_phonetic_node.real_position.y = phonetic_y
 		new_phonetic_node.parent_id = parent_id
 		new_phonetic_node.real_text = packed_word_phonetics[phonetic]
@@ -122,6 +124,13 @@ func _add_phonetic( new_word:String , parent_id:int ):
 		
 		$"BG/Content/Phonetic".add_child(new_phonetic_node)
 		phonetic_y += 30
+	var rest_node:WordPhoneticNode = node.instantiate()
+	rest_node.real_position.x = Global.playing_pos + _get_frame_position(packed_word_phonetics.size())
+	rest_node.real_position.y = phonetic_y
+	rest_node.parent_id = parent_id
+	rest_node.real_text = "rest"
+	rest_node.self_type = WordPhoneticNode.types.Phonetic
+	$"BG/Content/Phonetic".add_child(rest_node)
 
 # / connect functions 
 

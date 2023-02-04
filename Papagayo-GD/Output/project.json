@@ -1,46 +1,478 @@
 {
 	"phonetics": [
 		{
-			"parentId": 1,
-			"sizeX": 30,
+			"parentId": 0,
+			"sizeX": 6,
 			"text": "etc",
 			"type": 1,
-			"x": 0,
+			"x": 140,
+			"y": 130
+		},
+		{
+			"parentId": 0,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 170,
+			"y": 180
+		},
+		{
+			"parentId": 0,
+			"sizeX": 4,
+			"text": "SS",
+			"type": 1,
+			"x": 200,
+			"y": 210
+		},
+		{
+			"parentId": 2,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 230,
+			"y": 10
+		},
+		{
+			"parentId": 2,
+			"sizeX": 6,
+			"text": "MBP",
+			"type": 1,
+			"x": 240,
+			"y": 40
+		},
+		{
+			"parentId": 3,
+			"sizeX": 4,
+			"text": "SS",
+			"type": 1,
+			"x": 250,
+			"y": 360
+		},
+		{
+			"parentId": 3,
+			"sizeX": 2,
+			"text": "E",
+			"type": 1,
+			"x": 270,
+			"y": 420
+		},
+		{
+			"parentId": 3,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 280,
+			"y": 480
+		},
+		{
+			"parentId": 4,
+			"sizeX": 2,
+			"text": "U",
+			"type": 1,
+			"x": 320,
+			"y": 130
+		},
+		{
+			"parentId": 5,
+			"sizeX": 2,
+			"text": "E",
+			"type": 1,
+			"x": 350,
+			"y": 270
+		},
+		{
+			"parentId": 5,
+			"sizeX": 4,
+			"text": "TH",
+			"type": 1,
+			"x": 380,
+			"y": 300
+		},
+		{
+			"parentId": 5,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2210,
+			"y": 60
+		},
+		{
+			"parentId": 6,
+			"sizeX": 2,
+			"text": "O",
+			"type": 1,
+			"x": 2250,
+			"y": 190
+		},
+		{
+			"parentId": 6,
+			"sizeX": 4,
+			"text": "NN",
+			"type": 1,
+			"x": 2270,
+			"y": 250
+		},
+		{
+			"parentId": 7,
+			"sizeX": 4,
+			"text": "TH",
+			"type": 1,
+			"x": 2290,
+			"y": 360
+		},
+		{
+			"parentId": 7,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2310,
+			"y": 390
+		},
+		{
+			"parentId": 7,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2320,
+			"y": 450
+		},
+		{
+			"parentId": 8,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2360,
+			"y": 250
+		},
+		{
+			"parentId": 10,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2410,
 			"y": 200
 		},
 		{
-			"parentId": 1,
-			"sizeX": 20,
-			"text": "AH",
+			"parentId": 10,
+			"sizeX": 4,
+			"text": "AI",
 			"type": 1,
-			"x": 10,
+			"x": 2420,
 			"y": 230
 		},
 		{
-			"parentId": 1,
-			"sizeX": 10,
-			"text": "L",
+			"parentId": 10,
+			"sizeX": 4,
+			"text": "FV",
 			"type": 1,
-			"x": 20,
+			"x": 2430,
 			"y": 260
 		},
 		{
-			"parentId": 1,
-			"sizeX": 10,
+			"parentId": 10,
+			"sizeX": 8,
+			"text": "rest",
+			"type": 1,
+			"x": 0,
+			"y": 380
+		},
+		{
+			"parentId": 12,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2470,
+			"y": 370
+		},
+		{
+			"parentId": 12,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2480,
+			"y": 400
+		},
+		{
+			"parentId": 12,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2490,
+			"y": 430
+		},
+		{
+			"parentId": 13,
+			"sizeX": 6,
+			"text": "MBP",
+			"type": 1,
+			"x": 2530,
+			"y": 200
+		},
+		{
+			"parentId": 13,
+			"sizeX": 2,
+			"text": "E",
+			"type": 1,
+			"x": 2540,
+			"y": 230
+		},
+		{
+			"parentId": 13,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2550,
+			"y": 260
+		},
+		{
+			"parentId": 13,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2560,
+			"y": 290
+		},
+		{
+			"parentId": 13,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2570,
+			"y": 330
+		},
+		{
+			"parentId": 13,
+			"sizeX": 4,
+			"text": "AH",
+			"type": 1,
+			"x": 2590,
+			"y": 380
+		},
+		{
+			"parentId": 13,
+			"sizeX": 2,
+			"text": "L",
+			"type": 1,
+			"x": 2620,
+			"y": 420
+		},
+		{
+			"parentId": 13,
+			"sizeX": 2,
+			"text": "E",
+			"type": 1,
+			"x": 2640,
+			"y": 460
+		},
+		{
+			"parentId": 13,
+			"sizeX": 8,
+			"text": "rest",
+			"type": 1,
+			"x": 410,
+			"y": 480
+		},
+		{
+			"parentId": 14,
+			"sizeX": 4,
+			"text": "NN",
+			"type": 1,
+			"x": 2670,
+			"y": 130
+		},
+		{
+			"parentId": 14,
+			"sizeX": 2,
+			"text": "U",
+			"type": 1,
+			"x": 2680,
+			"y": 160
+		},
+		{
+			"parentId": 14,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2870,
+			"y": 460
+		},
+		{
+			"parentId": 14,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2880,
+			"y": 410
+		},
+		{
+			"parentId": 14,
+			"sizeX": 2,
+			"text": "E",
+			"type": 1,
+			"x": 2910,
+			"y": 470
+		},
+		{
+			"parentId": 14,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2690,
+			"y": 280
+		},
+		{
+			"parentId": 14,
+			"sizeX": 2,
 			"text": "O",
 			"type": 1,
-			"x": 30,
-			"y": 290
+			"x": 2700,
+			"y": 310
+		},
+		{
+			"parentId": 14,
+			"sizeX": 6,
+			"text": "etc",
+			"type": 1,
+			"x": 2710,
+			"y": 350
+		},
+		{
+			"parentId": 14,
+			"sizeX": 4,
+			"text": "AI",
+			"type": 1,
+			"x": 2740,
+			"y": 400
+		},
+		{
+			"parentId": 14,
+			"sizeX": 4,
+			"text": "NN",
+			"type": 1,
+			"x": 2770,
+			"y": 440
+		},
+		{
+			"parentId": 14,
+			"sizeX": 4,
+			"text": "SS",
+			"type": 1,
+			"x": 2800,
+			"y": 470
+		},
+		{
+			"parentId": 14,
+			"sizeX": 6,
+			"text": "MBP",
+			"type": 1,
+			"x": 2860,
+			"y": 500
 		}
 	],
 	"words": [
 		{
-			"selfId": 1,
-			"sizeX": 50,
-			"text": "hello",
+			"selfId": 0,
+			"sizeX": 10,
+			"text": "chris",
 			"type": 0,
-			"x": 0,
+			"x": 140,
+			"y": 70
+		},
+		{
+			"selfId": 2,
+			"sizeX": 6,
+			"text": "i'm",
+			"type": 0,
+			"x": 230,
+			"y": -40
+		},
+		{
+			"selfId": 3,
+			"sizeX": 12,
+			"text": "scared",
+			"type": 0,
+			"x": 250,
+			"y": 310
+		},
+		{
+			"selfId": 4,
+			"sizeX": 4,
+			"text": "to",
+			"type": 0,
+			"x": 320,
+			"y": 80
+		},
+		{
+			"selfId": 5,
+			"sizeX": 10,
+			"text": "death",
+			"type": 0,
+			"x": 340,
+			"y": 240
+		},
+		{
+			"selfId": 5,
+			"sizeX": 2,
+			"text": "i",
+			"type": 0,
+			"x": 2210,
+			"y": 10
+		},
+		{
+			"selfId": 6,
+			"sizeX": 10,
+			"text": "don't",
+			"type": 0,
+			"x": 2240,
 			"y": 150
+		},
+		{
+			"selfId": 7,
+			"sizeX": 10,
+			"text": "think",
+			"type": 0,
+			"x": 2290,
+			"y": 310
+		},
+		{
+			"selfId": 8,
+			"sizeX": 2,
+			"text": "i",
+			"type": 0,
+			"x": 2360,
+			"y": 200
+		},
+		{
+			"selfId": 10,
+			"sizeX": 8,
+			"text": "have",
+			"type": 0,
+			"x": 2410,
+			"y": 150
+		},
+		{
+			"selfId": 12,
+			"sizeX": 8,
+			"text": "that",
+			"type": 0,
+			"x": 2470,
+			"y": 320
+		},
+		{
+			"selfId": 13,
+			"sizeX": 20,
+			"text": "particular",
+			"type": 0,
+			"x": 2530,
+			"y": 150
+		},
+		{
+			"selfId": 14,
+			"sizeX": 32,
+			"text": "neurotransmitter",
+			"type": 0,
+			"x": 2670,
+			"y": 80
 		}
 	]
 }

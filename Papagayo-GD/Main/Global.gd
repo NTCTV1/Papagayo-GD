@@ -1,5 +1,6 @@
 extends Node
 const max_phonetic_length:int = 5
+var playing_pos:float = 0.0
 var project_safe_mode:bool = true
 var project_node_count:int = 0
 var project_fps:float = 24.0
@@ -24,6 +25,8 @@ var _parse_map:Dictionary = {}
 var phonetics:Dictionary = {}
 var words_nodes:Dictionary = {}
 var project_dic:Dictionary = {"words":[],"phonetics":[]}
+var mouth_node:Sprite2D
+
 
 signal stop_moving_nodes
 signal continue_moving_nodes
@@ -38,7 +41,7 @@ func get_frame_pos(fps:float = 24.0,frame:float = 0.0) -> float:
 	return (1/fps)*frame
 
 func _draw_scale_changed(new_value:float):
-	draw_scale = clamp(new_value,1,20)
+	draw_scale = clamp(new_value,0.2,2)
 
 func _draw_offset_y_changed(new_value:float):
 	draw_offset_y = clamp(new_value,-200,200)
@@ -52,6 +55,9 @@ func get_json(path:String) -> Dictionary:
 func save_json(path:String,savefile:Dictionary) -> void:
 	var file = FileAccess.open(path,FileAccess.WRITE)
 	file.store_line(JSON.stringify(savefile,"\t"))
+
+func get_grid_pos(xy:float) -> float:
+	return floor(xy/draw_spacing)*draw_spacing
 
 func parse_word(word:String) ->Dictionary:
 	var packed_phonetic:Dictionary = {}

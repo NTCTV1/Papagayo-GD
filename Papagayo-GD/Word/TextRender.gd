@@ -10,4 +10,4 @@ func _draw():
 	var draw_position:Vector2 = Vector2(0,17)
 	for _char in draw_text:
 		draw_char(font,draw_position,_char,10,font_color)
-		draw_position.x += 10
+		draw_position.x += 10 * Global.draw_scale
