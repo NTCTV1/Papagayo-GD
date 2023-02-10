@@ -5,6 +5,7 @@ var project_safe_mode:bool = true
 var project_node_count:int = 0
 var project_fps:float = 24.0
 
+
 var draw_scale:float = 1.0:
 	set = _draw_scale_changed
 var draw_spacing:float = 10.0
@@ -58,6 +59,9 @@ func save_json(path:String,savefile:Dictionary) -> void:
 
 func get_grid_pos(xy:float) -> float:
 	return round(xy/draw_spacing)*draw_spacing
+
+func get_frame_position( frame:float ):
+	return 10*frame
 
 func parse_word(word:String) ->Dictionary:
 	var packed_phonetic:Dictionary = {}
