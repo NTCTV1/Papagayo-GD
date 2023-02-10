@@ -18,11 +18,11 @@ func _process(_delta):
 	$"BG/Content".position.x = -Global.draw_scrolling * Global.draw_scale
 	$"BG/Content".position.y = Global.draw_offset_y
 	$"BG/Content".scale.x = Global.draw_scale
-	$"BG/Content/ActiveRange".size.x = $"AudioStreamPlayer".stream.get_length() * 10 * Global.project_fps * Global.draw_scale
+	$"BG/Content/ActiveRange".size.x = $"AudioStreamPlayer".stream.get_length() * 10 * Global.project_fps
 	if not audio_playing:
 		$"BG/Content/VSeparator".position.x = (floor(mouse_position_x / Global.draw_spacing / Global.draw_scale) * Global.draw_spacing)
 	else :
-		$"BG/Content/VSeparator".position.x = ( ($"AudioStreamPlayer".get_playback_position() * Global.project_fps * Global.draw_spacing ))*Global.draw_scale
+		$"BG/Content/VSeparator".position.x = ($"AudioStreamPlayer".get_playback_position() * Global.project_fps * Global.draw_spacing )
 	Global.playing_pos = $"BG/Content/VSeparator".position.x
 
 # connect functions
@@ -114,7 +114,7 @@ func _add_phonetic( new_word:String , parent_id:int ):
 	var phonetic_y:float = 200
 	for phonetic in packed_word_phonetics.keys():
 		var new_phonetic_node:WordPhoneticNode = node.instantiate()
-		new_phonetic_node.real_position.x = Global.playing_pos + _get_frame_position(phonetic) 
+		new_phonetic_node.real_position.x = Global.playing_pos + Global.get_frame_position(phonetic) 
 		new_phonetic_node.real_position.y = phonetic_y
 		new_phonetic_node.parent_id = parent_id
 		new_phonetic_node.real_text = packed_word_phonetics[phonetic]
@@ -122,7 +122,7 @@ func _add_phonetic( new_word:String , parent_id:int ):
 		$"BG/Content/Phonetic".add_child(new_phonetic_node)
 		phonetic_y += 30
 	var rest_node:WordPhoneticNode = node.instantiate()
-	rest_node.real_position.x = Global.playing_pos + _get_frame_position(packed_word_phonetics.size())
+	rest_node.real_position.x = Global.playing_pos + Global.get_frame_position(packed_word_phonetics.size())
 	rest_node.real_position.y = phonetic_y
 	rest_node.parent_id = parent_id
 	rest_node.real_text = "rest"
@@ -131,9 +131,6 @@ func _add_phonetic( new_word:String , parent_id:int ):
 
 # / connect functions 
 
-func _get_frame_position( frame:float ):
-	return 10*frame # get frame pos
-
 func _input(event):
 	var mouse_pos:Vector2 = get_global_mouse_position()
 	if event is InputEventKey:
@@ -141,7 +138,7 @@ func _input(event):
 			audio_playing = not audio_playing
 			if audio_playing:
 				$"AudioStreamPlayer".play()
-				$"AudioStreamPlayer".seek( ($"BG/Content/VSeparator".position.x/10)/Global.project_fps/Global.draw_scale )
+				$"AudioStreamPlayer".seek( ($"BG/Content/VSeparator".position.x/10)/Global.project_fps )
 			else :
 				$"AudioStreamPlayer".stop()
 	elif event is InputEventMouseButton:
