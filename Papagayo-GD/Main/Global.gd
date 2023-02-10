@@ -57,7 +57,7 @@ func save_json(path:String,savefile:Dictionary) -> void:
 	file.store_line(JSON.stringify(savefile,"\t"))
 
 func get_grid_pos(xy:float) -> float:
-	return floor(xy/draw_spacing)*draw_spacing
+	return round(xy/draw_spacing)*draw_spacing
 
 func parse_word(word:String) ->Dictionary:
 	var packed_phonetic:Dictionary = {}

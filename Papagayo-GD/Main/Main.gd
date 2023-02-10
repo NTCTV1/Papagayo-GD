@@ -42,7 +42,8 @@ func _load_project(files:PackedStringArray):
 				new_word_node.real_position = Vector2(word.x,word.y)
 				Global.words_nodes[new_word_node.self_id] = new_word_node
 				$"BG/Content/Word".add_child(new_word_node)
-				Global.project_node_count += 1
+				if word.selfId > Global.project_node_count: # fixed the wrong movement like move other words'phonetics
+					Global.project_node_count = word.selfId + 1
 			for phonetic in project.phonetics:
 				var new_phonetic_node:WordPhoneticNode = node.instantiate()
 				new_phonetic_node.parent_id = phonetic.parentId
@@ -56,15 +57,15 @@ func _load_project(files:PackedStringArray):
 			$"AudioStreamPlayer".stream = WavLoader.loadfile(file)
 
 func _clear():
+	Global.project_node_count = 0
 	for word_node in $"BG/Content/Word".get_children():
 		word_node.queue_free()
 	for phonetic_node in $"BG/Content/Phonetic".get_children():
 		phonetic_node.queue_free()
 
 func _export_project():
-	#Global.draw_spacing
 	Global.project_dic.words.clear()
-	Global.project_dic.phonetics.clear()
+	Global.project_dic.phonetics.clear() # clear last exported things
 	for word in $"BG/Content/Word".get_children():
 		Global.project_dic.words.append( {
 			"selfId":word.self_id,
@@ -82,7 +83,6 @@ func _export_project():
 			"x":Global.get_grid_pos(phonetic.real_position.x),
 			"y":Global.get_grid_pos(phonetic.real_position.y) } )
 	Global.save_json(project_json_path,Global.project_dic)
-	print("Export over!")
 
 func _change_fps(new_value:String):
 	Global.project_fps = float(new_value)
@@ -113,15 +113,12 @@ func _add_phonetic( new_word:String , parent_id:int ):
 	var packed_word_phonetics:Dictionary = Global.parse_word(new_word)
 	var phonetic_y:float = 200
 	for phonetic in packed_word_phonetics.keys():
-		
 		var new_phonetic_node:WordPhoneticNode = node.instantiate()
-		
 		new_phonetic_node.real_position.x = Global.playing_pos + _get_frame_position(phonetic) 
 		new_phonetic_node.real_position.y = phonetic_y
 		new_phonetic_node.parent_id = parent_id
 		new_phonetic_node.real_text = packed_word_phonetics[phonetic]
 		new_phonetic_node.self_type = WordPhoneticNode.types.Phonetic
-		
 		$"BG/Content/Phonetic".add_child(new_phonetic_node)
 		phonetic_y += 30
 	var rest_node:WordPhoneticNode = node.instantiate()
@@ -135,7 +132,7 @@ func _add_phonetic( new_word:String , parent_id:int ):
 # / connect functions 
 
 func _get_frame_position( frame:float ):
-	return 10*frame
+	return 10*frame # get frame pos
 
 func _input(event):
 	var mouse_pos:Vector2 = get_global_mouse_position()
