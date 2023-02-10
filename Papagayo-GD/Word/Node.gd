@@ -38,7 +38,7 @@ func _destory(): # for words
 			queue_free()
 
 func _process(_delta):
-	position.x = Global.get_grid_pos(real_position.x)*Global.draw_scale
+	position.x = Global.get_grid_pos(real_position.x) # v0.02 fixed wrong posx
 	position.y = Global.get_grid_pos(real_position.y)
 	size.x = Global.get_grid_pos(real_size_x)*Global.draw_scale
 	
@@ -92,9 +92,9 @@ func _continue_moving(): # see the note above
 
 func _input(event):
 	if event is InputEventMouseMotion :
-		var move_x:float = (event.relative.x) / Global.draw_scale
+		var move_x:float = event.relative.x / Global.draw_scale
 		if move_able:
-			real_position.x += move_x
+			real_position.x += move_x 
 			real_position.y += event.relative.y
 			if self_type == types.Word and Global.words_nodes.has(self_id):
 				for node in $"../../Phonetic".get_children():
