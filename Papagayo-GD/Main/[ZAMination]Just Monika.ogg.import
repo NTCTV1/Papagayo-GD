@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://chyruoaca31qd"
+path="res://.godot/imported/[ZAMination]Just Monika.ogg-e8d4112de5570f99a22583600af35861.oggvorbisstr"
+
+[deps]
+
+source_file="res://Main/[ZAMination]Just Monika.ogg"
+dest_files=["res://.godot/imported/[ZAMination]Just Monika.ogg-e8d4112de5570f99a22583600af35861.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

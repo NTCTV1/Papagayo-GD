@@ -1,0 +1,208 @@
+{
+	"fps": 24,
+	"notes": [],
+	"phonetics": [
+		{
+			"connect_id": 0,
+			"frame": 24,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "AH",
+			"x": 240,
+			"y": 200
+		},
+		{
+			"connect_id": 2,
+			"frame": 27,
+			"frame_length": 3,
+			"size_x": 30,
+			"text": "etc",
+			"x": 270,
+			"y": 290
+		},
+		{
+			"connect_id": 2,
+			"frame": 28,
+			"frame_length": 1,
+			"size_x": 10,
+			"text": "E",
+			"x": 280,
+			"y": 320
+		},
+		{
+			"connect_id": 3,
+			"frame": 31,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "AI",
+			"x": 310,
+			"y": 420
+		},
+		{
+			"connect_id": 3,
+			"frame": 32,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "NN",
+			"x": 320,
+			"y": 450
+		},
+		{
+			"connect_id": 5,
+			"frame": 34,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "NN",
+			"x": 340,
+			"y": 160
+		},
+		{
+			"connect_id": 5,
+			"frame": 35,
+			"frame_length": 1,
+			"size_x": 10,
+			"text": "E",
+			"x": 350,
+			"y": 190
+		},
+		{
+			"connect_id": 6,
+			"frame": 40,
+			"frame_length": 3,
+			"size_x": 30,
+			"text": "etc",
+			"x": 400,
+			"y": 320
+		},
+		{
+			"connect_id": 6,
+			"frame": 42,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "AH",
+			"x": 420,
+			"y": 350
+		},
+		{
+			"connect_id": 6,
+			"frame": 43,
+			"frame_length": 2,
+			"size_x": 20,
+			"text": "SS",
+			"x": 430,
+			"y": 380
+		},
+		{
+			"connect_id": 7,
+			"frame": 46,
+			"frame_length": 3,
+			"size_x": 30,
+			"text": "etc",
+			"x": 460,
+			"y": 220
+		},
+		{
+			"connect_id": 7,
+			"frame": 48,
+			"frame_length": 1,
+			"size_x": 10,
+			"text": "E",
+			"x": 480,
+			"y": 250
+		},
+		{
+			"connect_id": 7,
+			"frame": 49,
+			"frame_length": 1,
+			"size_x": 10,
+			"text": "L",
+			"x": 490,
+			"y": 280
+		},
+		{
+			"connect_id": 8,
+			"frame": 54,
+			"frame_length": 3,
+			"size_x": 30,
+			"text": "etc",
+			"x": 540,
+			"y": 260
+		},
+		{
+			"connect_id": 8,
+			"frame": 56,
+			"frame_length": 1,
+			"size_x": 10,
+			"text": "E",
+			"x": 560,
+			"y": 290
+		},
+		{
+			"connect_id": 9,
+			"frame": 59,
+			"frame_length": 3,
+			"size_x": 30,
+			"text": "MBP",
+			"x": 590,
+			"y": 200
+		}
+	],
+	"words": [
+		{
+			"id": 0,
+			"size_x": 10,
+			"text": "a",
+			"x": 240,
+			"y": 150
+		},
+		{
+			"id": 2,
+			"size_x": 10,
+			"text": "t",
+			"x": 270,
+			"y": 240
+		},
+		{
+			"id": 3,
+			"size_x": 20,
+			"text": "an",
+			"x": 310,
+			"y": 370
+		},
+		{
+			"id": 5,
+			"size_x": 30,
+			"text": "nee",
+			"x": 340,
+			"y": 110
+		},
+		{
+			"id": 6,
+			"size_x": 40,
+			"text": "just",
+			"x": 400,
+			"y": 270
+		},
+		{
+			"id": 7,
+			"size_x": 40,
+			"text": "girl",
+			"x": 460,
+			"y": 170
+		},
+		{
+			"id": 8,
+			"size_x": 10,
+			"text": "j",
+			"x": 540,
+			"y": 210
+		},
+		{
+			"id": 9,
+			"size_x": 10,
+			"text": "b",
+			"x": 590,
+			"y": 150
+		}
+	]
+}

@@ -1,0 +1,2 @@
+Max phonetic length is 5 !
+If you want to change it , please also change the Code "res://Main/Global.gd"

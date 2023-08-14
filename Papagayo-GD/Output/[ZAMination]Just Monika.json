@@ -1,0 +1,191 @@
+{
+	"fps": 0,
+	"notes": [
+		{
+			"frame": 133,
+			"frame_length": 17,
+			"size_x": 170,
+			"text": "我很高兴你能加入文学社！",
+			"x": 1330,
+			"y": 140
+		},
+		{
+			"frame": 150,
+			"frame_length": 17,
+			"size_x": 170,
+			"text": "嘿，我可还没同意加入呢      ",
+			"x": 1500,
+			"y": 200
+		},
+		{
+			"frame": 167,
+			"frame_length": 15,
+			"size_x": 150,
+			"text": "哇哦，纱世里！他是你的新朋友？",
+			"x": 1670,
+			"y": 250
+		},
+		{
+			"frame": 182,
+			"frame_length": 16,
+			"size_x": 160,
+			"text": "他是我们的新社员！",
+			"x": 1820,
+			"y": 140
+		},
+		{
+			"frame": 198,
+			"frame_length": 21,
+			"size_x": 210,
+			"text": "这件事还没有确定好呢",
+			"x": 1980,
+			"y": 200
+		},
+		{
+			"frame": 219,
+			"frame_length": 14,
+			"size_x": 140,
+			"text": "这是莫妮卡！",
+			"x": 2190,
+			"y": 140
+		},
+		{
+			"frame": 233,
+			"frame_length": 13,
+			"size_x": 130,
+			"text": "尤里！",
+			"x": 2330,
+			"y": 170
+		},
+		{
+			"frame": 246,
+			"frame_length": 12,
+			"size_x": 120,
+			"text": "还有夏树！",
+			"x": 2460,
+			"y": 140
+		},
+		{
+			"frame": 258,
+			"frame_length": 13,
+			"size_x": 130,
+			"text": "然后就是我了！",
+			"x": 2580,
+			"y": 170
+		},
+		{
+			"frame": 271,
+			"frame_length": 10,
+			"size_x": 100,
+			"text": "欢迎来到我们的社团！",
+			"x": 2710,
+			"y": 210
+		},
+		{
+			"frame": 281,
+			"frame_length": 10,
+			"size_x": 100,
+			"text": "你想来读点什么吗",
+			"x": 2810,
+			"y": 140
+		},
+		{
+			"frame": 291,
+			"frame_length": 20,
+			"size_x": 200,
+			"text": "这里不需要拘谨！",
+			"x": 2910,
+			"y": 170
+		},
+		{
+			"frame": 311,
+			"frame_length": 11,
+			"size_x": 110,
+			"text": "我们会改善你的理解",
+			"x": 3110,
+			"y": 200
+		},
+		{
+			"frame": 322,
+			"frame_length": 11,
+			"size_x": 110,
+			"text": "吃下这个出卖灵魂的蛋糕",
+			"x": 3220,
+			"y": 150
+		},
+		{
+			"frame": 333,
+			"frame_length": 18,
+			"size_x": 180,
+			"text": "你就一定要带一个男的来吗？",
+			"x": 3330,
+			"y": 190
+		},
+		{
+			"frame": 351,
+			"frame_length": 10,
+			"size_x": 100,
+			"text": "是时候来写一些诗了",
+			"x": 3510,
+			"y": 150
+		},
+		{
+			"frame": 361,
+			"frame_length": 9,
+			"size_x": 90,
+			"text": "不要害怕去展示它们",
+			"x": 3610,
+			"y": 190
+		},
+		{
+			"frame": 370,
+			"frame_length": 23,
+			"size_x": 230,
+			"text": "因为学园祭快到了",
+			"x": 3700,
+			"y": 220
+		},
+		{
+			"frame": 393,
+			"frame_length": 10,
+			"size_x": 100,
+			"text": "你可以帮忙烘焙",
+			"x": 3930,
+			"y": 260
+		},
+		{
+			"frame": 403,
+			"frame_length": 9,
+			"size_x": 90,
+			"text": "或者帮忙整点装饰",
+			"x": 4030,
+			"y": 150
+		},
+		{
+			"frame": 412,
+			"frame_length": 21,
+			"size_x": 210,
+			"text": "但是我今天就要一个人回家",
+			"x": 4120,
+			"y": 220
+		},
+		{
+			"frame": 433,
+			"frame_length": 39,
+			"size_x": 390,
+			"text": "也许我们是朋友，也许我们关系更好。但是他又怎能喜欢上一个普通的邻家女孩？",
+			"x": 4330,
+			"y": 260
+		},
+		{
+			"frame": 472,
+			"frame_length": 40,
+			"size_x": 400,
+			"text": "又或许我不是她的另一半",
+			"x": 4720,
+			"y": 150
+		}
+	],
+	"phonetics": [],
+	"words": []
+}
